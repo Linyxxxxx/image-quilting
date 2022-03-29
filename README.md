@@ -4,7 +4,7 @@ An implementation of the paper ["Image Quilting for Texture Synthesis and Transf
 ## Example
 ### Image Quilting
 ```MATLAB
-sample=imread("quilting\text_small.jpg");
+sample=imread("img\text_small.jpg");
 
 out=image_quilting(sample,24,8,0.1);
 ```
@@ -12,8 +12,8 @@ out=image_quilting(sample,24,8,0.1);
 ![OUT](example/out1.png)
 ### Texture Transfer
 ```MATLAB
-sample=imread("quilting\sketch.tiff");
-target=imread('quilting\feynman.tiff');
+sample=imread("img\sketch.tiff");
+target=imread('img\feynman.tiff');
 
 out=texture_transfer(sample,target,36,0.1,3);
 ```
